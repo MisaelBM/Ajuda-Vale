@@ -1,2 +1,2 @@
-document.getElementById("loginButton").addEventListener('click', () => open("http://127.0.0.1:5500/login/indexLogin.html"));
-document.getElementById("signUpButton").addEventListener('click', () => open("http://127.0.0.1:5500/sign-up/indexSignUp.html"));
+document.getElementById("loginButton").addEventListener('click', () => open("https://misaelbm.github.io/Ajuda-Vale/login/indexLogin.html"));
+document.getElementById("signUpButton").addEventListener('click', () => open("https://misaelbm.github.io/Ajuda-Vale/sign-up/indexSignUp.html"));

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Vale Sign up</title>
+    <link rel="stylesheet" href="styleSignUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65bfbf4940.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-page">
+        <header class="header-page">
+            <div class="button-exit-content">
+                <button class="button-exit" id="buttonExit"><i class="fa-solid fa-circle-arrow-left"></i></button>
+            </div>
+            <div class="header-title-content">
+                <h1 class="header-title">
+                    Ajuda Vale
+                </h1>
+                <i class="fa-solid fa-location-dot icon-local"></i>
+            </div>
+        </header>
+        <section class="section-type-account" id="typeAccount">
+            <div class="info-sign-up">
+                Escolha o tipo da sua conta
+            </div>
+            <div class="type-account-content">
+                <div class="radio-content">
+                    <input type="radio" name="radioType" id="checkDonor" class="radio-type-account">
+                    <label for="checkDonor" class="label-radio">Doador</label>
+                </div>
+                <div class="radio-content">
+                    <input type="radio" name="radioType" id="checkInstitution" class="radio-type-account">
+                    <label for="checkInstitution" class="label-radio">Instituição</label>
+                </div>
+                <div class="button-type-confirm-content">
+                    <button class="button-type-confirm" id="buttonTypeConfirm">Confirmar</button>
+                </div>
+            </div>    
+        </section>
+        <section class="sign-up" id="signUpDonor">
+            <div class="info-sign-up">
+                Faça o cadastro
+            </div>
+            <div class="level-sign-up" id="firstLevelSignUpDonor">
+                <input type="text" name="firstNameDonor" id="firstNameDonor" class="input-level" maxlength="30" placeholder="Primeiro nome">
+                <input type="text" name="lastNameDonor" id="lastNameDonor" class="input-level" maxlength="70" placeholder="Sobrenome">
+                <div class="date-user-content">
+                    <div class="text-date-user">Data de nascimento(+18)</div>
+                    <input type="date" name="dateUserDonor" id="dateUserDonor" class="input-level">
+                </div>
+                <select name="selectGenderDonor" id="selectGenderDonor" class="select-gender">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Outro</option>
+                </select>
+                <span class="alert-data-user" id="firstAlertDataUserDonor"></span>
+                <div class="button-level-confirm-content">
+                    <button class="button-level-confirm" id="buttonFirstLevelConfirmDonor">Próxima etapa</button>
+                </div>
+            </div>
+            <div class="level-sign-up" id="secondLevelSignUpDonor">
+                <input type="email" name="emailUserDonor" id="emailUserDonor" class="input-level" placeholder="Email">
+                <input type="email" name="confirmEmailUserDonor" id="confirmEmailUserDonor" class="input-level" placeholder="Confirmar Email">
+                <input type="password" name="passwordUserDonor" id="passwordUserDonor" class="input-level" maxlength="16" placeholder="Senha">
+                <input type="password" name="confirmPasswordUserDonor" id="confirmPasswordUserDonor" class="input-level" maxlength="16" placeholder="Confirmar Senha">
+                <span class="alert-data-user" id="secondAlertDataUserDonor"></span>
+                <div class="button-level-confirm-content">
+                    <button class="button-level-confirm" id="buttonSecondLevelConfirmDonor">Próxima etapa</button>
+                </div>
+            </div>
+            <div class="level-sign-up" id="thirdLevelSignUpDonor">
+                <input type="text" name="cepUserDonor" id="cepUserDonor" class="input-level" maxlength="9" placeholder="CEP">
+                <div class="content-address" id="contentAddressDonor">
+                    <div class="content-part-address">
+                        <div class="input-address-level">
+                            <span id="cityUserDonor"></span>
+                        </div>
+                        <div class="input-address-level">
+                            <span id="stateUserDonor"></span>
+                        </div>
+                    </div>
+                    <div class="input-level">
+                        <span id="neighborhoodUserDonor"></span>
+                    </div>
+                    <div class="content-part-address">
+                        <div class="input-address-level">
+                            <span id="streetUserDonor"></span>
+                        </div>
+                        <input type="number" name="numberUserDonor" id="numberUserDonor" class="input-number-address-level" placeholder="Número">
+                    </div>
+                </div>
+                <div class="button-level-confirm-content">
+                    <button class="button-level-confirm" id="buttonThirdLevelConfirmDonor">Próxima etapa</button>
+                </div>
+            </div>
+        </section>
+        <section class="sign-up" id="signUpInstitution">
+            <div class="info-sign-up">
+                Faça o cadastro
+            </div>
+            <div class="level-sign-up" id="firstLevelSignUpInstitution">
+                <input type="text" name="firstNameInstitution" id="firstNameInstitution" class="input-level" maxlength="30" placeholder="Primeiro nome (repres.)">
+                <input type="text" name="lastNameInstitution" id="lastNameInstitution" class="input-level" maxlength="70" placeholder="Sobrenome (repres.)">
+                <div class="date-user-content">
+                    <div class="text-date-user">Data de nascimento(+18)</div>
+                    <input type="date" name="dateUserInstitution" id="dateUserInstitution" class="input-level">
+                </div>
+                <select name="selectGenderInstitution" id="selectGenderInstitution" class="select-gender">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Outro</option>
+                </select>
+                <span class="alert-data-user" id="firstAlertDataUserInstitution"></span>
+                <div class="button-level-confirm-content">
+                    <button class="button-level-confirm" id="buttonFirstLevelConfirmInstitution">Próxima etapa</button>
+                </div>
+            </div>
+            <div class="level-sign-up" id="secondLevelSignUpInstitution">
+                <input type="email" name="emailUserInstitution" id="emailUserInstitution" class="input-level" placeholder="Email (repres.)">
+                <input type="email" name="confirmEmailUserInstitution" id="confirmEmailUserInstitution" class="input-level" placeholder="Confirmar Email">
+                <input type="password" name="passwordUserInstitution" id="passwordUserInstitution" class="input-level" maxlength="16" placeholder="Senha">
+                <input type="password" name="confirmPasswordUserInstitution" id="confirmPasswordUserInstitution" class="input-level" maxlength="16" placeholder="Confirmar Senha">
+                <span class="alert-data-user" id="secondAlertDataUserInstitution"></span>
+                <div class="button-level-confirm-content">
+                    <button class="button-level-confirm" id="buttonSecondLevelConfirmInstitution">Próxima etapa</button>
+                </div>
+            </div>
+            <div class="level-sign-up" id="thirdLevelSignUpInstitution">
+                <input type="text" name="cepUserInstitution" id="cepUserInstitution" class="input-level" maxlength="9" placeholder="CEP">
+                <div class="content-address" id="contentAddressInstitution">
+                    <div class="content-part-address">
+                        <div class="input-address-level">
+                            <span id="cityUserInstitution"></span>
+                        </div>
+                        <div class="input-address-level">
+                            <span id="stateUserInstitution"></span>
+                        </div>
+                    </div>
+                    <div class="input-level">
+                        <span id="neighborhoodUserInstitution"></span>
+                    </div>
+                    <div class="content-part-address">
+                        <div class="input-address-level">
+                            <span id="streetUserInstitution"></span>
+                        </div>
+                        <input type="number" name="numberUserInstitution" id="numberUserInstitution" class="input-number-address-level" placeholder="Número">
+                    </div>
+                </div>
+                <div class="button-level-confirm-content">
+                    <button class="button-level-confirm" id="buttonThirdLevelConfirmInstitution">Próxima etapa</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-finish-sign-up" id="finishSignUp">
+            <div class="finish-sign-up-text">
+                Cadastro concluido com sucesso!
+            </div>
+            <div class="finish-sign-up-button-content">
+                <button class="finish-sign-up-button" id="buttonFinishSignUp">Finalizar</button>
+            </div>
+        </section>
+    </main>
+    <script src="scriptSignUp.js"></script>
+</body>
+</html>

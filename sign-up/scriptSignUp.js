@@ -254,4 +254,4 @@ function ApiCep(cep) {
     return fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(e => e.json());
 };
-document.getElementById("buttonFinishSignUp").addEventListener('click', () => open("http://127.0.0.1:5500/home"));
+document.getElementById("buttonFinishSignUp").addEventListener('click', () => open("https://misaelbm.github.io/Ajuda-Vale/home"));
